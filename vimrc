@@ -7,11 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
-" Colorschemes
-Plug 'flazz/vim-colorschemes'
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-colorscheme-switcher'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 
@@ -22,9 +18,11 @@ nmap <leader>ne :NERDTreeToggle<cr>
 " Base settings
 syntax on
 
-colorscheme kiss
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+set background=dark
+colorscheme gruvbox
 
 nnoremap <Leader>w <C-w>
 
